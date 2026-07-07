@@ -43,8 +43,6 @@ def fetch_external_product(barcode):
         pass
     return None
 
-# --- REST API ROUTES ---
-
 @app.route('/inventory', methods=['GET'])
 def get_all_items():
     return jsonify(inventory_db), 200

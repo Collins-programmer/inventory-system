@@ -24,52 +24,52 @@ Before getting started, ensure the following are installed:
 - Pipenv
 
 Install Pipenv if it is not already available use:
-
+```
 pip install pipenv
-
+```
 
 ## Clone the Repository
 
 Clone the repository and navigate into the project directory.
-
+```
 git clone <your-ssh-link >
 cd <repository-name>
-
+```
 
 ## Install Dependencies
 
 Create a virtual environment and install all project dependencies using Pipenv.
 
-
+```
 pipenv install
-
+```
 Activate the virtual environment.
-
+```
 pipenv shell
-
-If the project includes development dependencies, install them as well.
-
+```
+Since the project includes development dependencies, install them as well.
+```
 pipenv install --dev
-
+```
 
 ## Running the Application
 
 Start the Flask application.
-
+```
 python app.py
-
+```
 
 The API will be available at:
-
+```
 http://127.0.0.1:5000
-
+```
 
 ## Running the Command-Line Interface
 
 Once the API server is running, start the CLI in a separate terminal.
-
+```
 python cli.py
-
+```
 The CLI provides options to:
 
 - View all inventory items
@@ -92,13 +92,13 @@ The CLI provides options to:
 ## Running Tests
 
 Execute the test suite using Pytest.
-
+```
 pytest
-
+```
 To display more detailed test output:
-
+```
 pytest -v
-
+```
 ## External API
 
 This project uses the OpenFoodFacts API to retrieve product information based on barcode values.
